@@ -1,4 +1,5 @@
 // setting을 싱글턴 객체로 생성
+// 멀티쓰레드의 경우 작성 주의필요
 public class Settings {
 //   인스턴스 생성 막기
     private Settings() {};

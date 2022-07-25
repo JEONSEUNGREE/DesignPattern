@@ -28,4 +28,4 @@ public class Iterator {
 //            total = total + curFruit.calculatePrice(); // 가격
 //        }
     }
-}
+//}
