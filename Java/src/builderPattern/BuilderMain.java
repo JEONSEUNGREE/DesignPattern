@@ -9,16 +9,22 @@ package builderPattern;
 public class BuilderMain {
     public static void main(String[] args) {
 
-        ComputerFactory computerFactory = new ComputerFactory();
+//        ComputerFactory computerFactory = new ComputerFactory();
+//
+//        computerFactory.setBluePrint(new LgGramBluePrint());
+////        computerFactory.setBluePrint(new MacAirBluePrint());
+//
+//        computerFactory.make();
+//        System.out.println(computerFactory.getComputer());
 
-        computerFactory.setBluePrint(new LgGramBluePrint());
-//        computerFactory.setBluePrint(new MacAirBluePrint());
 
-        computerFactory.make();
-        System.out.println(computerFactory.getComputer());
+        Computer computer = ComputerBuilder
+                .startWithCpu("16")
+//                .setCpu("i7")
+                .setRam("16")
+                .setStorage("256 ssd")
+                .build();
 
-
-//        Computer computer = new Computer("i7", "16g", "256g ssd");
-//        System.out.println(computer.toString());
+        System.out.println(computer.toString());
     }
 }
